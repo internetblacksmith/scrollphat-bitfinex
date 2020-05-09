@@ -1,0 +1,12 @@
+[Unit]
+Description=BitFinex Ticker
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/home/pi/scrollphathd-bitfinex/
+User=pi
+ExecStart=/home/pi/scrollphathd-bitfinex/main.py -t phathd -d
+
+[Install]
+WantedBy=multi-user.target
