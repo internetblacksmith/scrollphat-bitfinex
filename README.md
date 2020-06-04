@@ -37,7 +37,7 @@ Python script to get the current value of bitcoin from [bitfenix](https://www.bi
   * scrollphat hd: ```./main.py --type phathd```
 
 ## Start the script at boot
-1. copy or link the *.srevice file for your display in ```/lib/systemd/system/```
+1. copy or link the *.service file for your display in ```/lib/systemd/system/```
   * scrollphat: ```scrollphat-bitfinex.service```
   * scrollphat hd: ```scrollphathd-bitfinex.service```
 2. reload the services: ```sudo systemctl daemon-reload```
